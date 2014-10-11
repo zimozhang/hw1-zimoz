@@ -19,13 +19,13 @@
       <nameValuePair>
         <name>outputdocument</name>
         <value>
-          <string>/home/zimo/workspace/hw1-zimoz/src/main/resources/sample.out</string>
+          <string>/home/zimo/git/hw1-zimoz/hw1-zimoz/src/main/resources/data/hw1-zimoz.out</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
-        <import name="typeSystemDescriptor"/>
+        <import location="/home/zimo/git/hw1-zimoz/hw1-zimoz/src/main/resources/typeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -33,7 +33,7 @@
     <capabilities>
       <capability>
         <inputs>
-          <type allAnnotatorFeatures="true">types.geneTag</type>
+          <type allAnnotatorFeatures="true">geneTag</type>
         </inputs>
         <outputs/>
         <languagesSupported/>

@@ -30,6 +30,7 @@ public void process(JCas aJCas) {
     // get annotation indexes
     String st = aJCas.getDocumentText();
     
+    
     PosTagNamedEntityRecognizer ner;
     try {
       ner = new PosTagNamedEntityRecognizer();
@@ -49,7 +50,7 @@ public void process(JCas aJCas) {
         a.setID(st.substring(0, 14));
         a.setText(st.substring(k+15, v+15));
         
-
+        
         a.addToIndexes();
       }
       
@@ -62,14 +63,14 @@ public void process(JCas aJCas) {
     
    
 
-//private int countWhiteSpace(String phrase){
-//  int countBlank = 0;
-//  for(int i=0; i<phrase.length(); i++) {
-//    if(Character.isWhitespace(phrase.charAt(i))) {
-//        countBlank++;
-//    }
-//}
-//  return countBlank;
-//}
+private int countWhiteSpace(String phrase){
+  int countBlank = 0;
+  for(int i=0; i<phrase.length(); i++) {
+    if(Character.isWhitespace(phrase.charAt(i))) {
+        countBlank++;
+    }
+}
+  return countBlank;
+}
 
 }

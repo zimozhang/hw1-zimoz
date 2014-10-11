@@ -11,7 +11,7 @@
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import name="typeSystemDescriptor"/>
+        <import location="/home/zimo/git/hw1-zimoz/hw1-zimoz/src/main/resources/typeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -19,10 +19,10 @@
     <capabilities>
       <capability>
         <inputs>
-          <type allAnnotatorFeatures="true">types.geneTag</type>
+          <type allAnnotatorFeatures="true">types.sentenceTag</type>
         </inputs>
         <outputs>
-          <type allAnnotatorFeatures="true">types.sentenceTag</type>
+          <type allAnnotatorFeatures="true">types.geneTag</type>
         </outputs>
         <languagesSupported/>
       </capability>
